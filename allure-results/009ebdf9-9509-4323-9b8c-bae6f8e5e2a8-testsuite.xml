@@ -83,7 +83,7 @@
                 
                 Expected: " 2. Please choose a gender."
                 Received: "2. Form Size"
-                    at Context.&lt;anonymous> (C:\Users\alex9\MLH2\test\smoke\/initial.js:46:26)
+                    at Context.&lt;anonymous> (C:\Users\alex9\MLH2\test\smoke\/labels.js:46:26)
                     at Context.executeSync (C:\Users\alex9\MLH2\node_modules\@wdio\sync\build\index.js:25:22)
                     at C:\Users\alex9\MLH2\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
             </failure>
