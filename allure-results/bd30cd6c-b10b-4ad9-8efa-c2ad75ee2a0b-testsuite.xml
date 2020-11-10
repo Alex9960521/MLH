@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604874749091' stop='1604874749516'>
+    <name>My Little Hero: Placeholders are correct</name>
+    <title>My Little Hero: Placeholders are correct</title>
+    <test-cases>
+        <test-case start='1604874749091' status='failed' stop='1604874749515'>
+            <name>TC-0010 Placeholder for name = Hero's name</name>
+            <title>TC-0010 Placeholder for name = Hero's name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.111'/>
+            </parameters>
+            <steps>
+                <step start='1604874749092' status='passed' stop='1604874749133'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='4df1447d-7997-4bf0-9326-17b1bc00e028-attachment.json' type='application/json' size='54'/>
+                        <attachment title='Response' source='d53fdb5f-a914-46cd-ab3d-7971067a2798-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1604874749136' status='passed' stop='1604874749165'>
+                    <name>GET /session/:sessionId/element/d3d5dfee-ee23-4d1b-a452-ee47f62e9850/attribute/title</name>
+                    <title>GET /session/:sessionId/element/d3d5dfee-ee23-4d1b-a452-ee47f62e9850/attribute/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1604874749167' status='passed' stop='1604874749514'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='4b679d99-d9b6-46c0-ae23-8a47e29e2d7b-attachment.png' type='image/png' size='40613'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Hero's name"
+                Received: ""</message>
+                <stack-trace>Error: expect(received).toEqual(expected) // deep equality
+                
+                Expected: "Hero's name"
+                Received: ""
+                    at Context.&lt;anonymous> (C:\Users\alex9\MLH2\test\smoke\/labels.js:65:26)
+                    at Context.executeSync (C:\Users\alex9\MLH2\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\alex9\MLH2\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
